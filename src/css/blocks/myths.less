@@ -1,0 +1,262 @@
+.myths {
+
+  padding-bottom: 100px;
+
+  @media screen and (max-width: 960px) {
+    padding-bottom: 65px;
+  }
+
+  @media screen and (max-width: 670px) {
+    padding-bottom: 50px;
+  }
+
+  &__title-block {
+    max-width: 780px;
+    margin: auto;
+    padding: 55px 0 25px;
+
+    @media screen and (max-width: 670px) {
+      padding: 35px 0 25px;
+    }
+    
+    h2 {
+      padding-bottom: 20px;
+    }
+  }
+  &__pic {
+    text-align: center;
+    padding: 25px 0 30px;
+  }
+  &__bq {
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  &__bq-photo {
+    width: 134px;
+    padding-top: 5px;
+
+    @media screen and (max-width: 670px) {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }
+  &__pic {
+    &--credit {
+      padding-bottom: 120px;
+    }
+  }
+  &__bq-img {
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #b5b5b5;
+
+    @media screen and (max-width: 670px) {
+      margin: auto;
+    }
+  }
+  &__bq-text {
+    width: calc( 100% - 175px );
+    margin-left: 41px;
+    background-color: #ffffff;
+    padding: 30px 35px 30px 60px;
+    position: relative;
+    line-height: 1.6;
+
+    @media screen and (max-width: 960px) {
+      margin-left: 21px;
+      width: calc( 100% - 155px );
+    }
+
+    @media screen and (max-width: 670px) {
+      width: 100%;
+      margin-left: 0;
+      padding: 25px;
+    }
+
+    p {
+      padding-bottom: 30px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    &:before {
+      content: '';
+      width: 42px;
+      height: 33px;
+      display: block;
+      background: url(../images/left-quote.png) no-repeat center;
+      background-size: contain;
+      position: absolute;
+      left: 0;
+      top: -16px;
+
+      @media screen and (max-width: 670px) {
+        width: 33px;
+        height: 26px;
+        top: -13px;
+      }
+    }
+    &:after {
+      content: '';
+      width: 42px;
+      height: 33px;
+      display: block;
+      background: url(../images/right-quote.png) no-repeat center;
+      background-size: contain;
+      position: absolute;
+      right: 0;
+      bottom: -16px;
+
+      @media screen and (max-width: 670px) {
+        width: 33px;
+        height: 26px;
+        bottom: -13px;
+      }
+    }
+  }
+  &__info {
+    padding: 25px 0;
+  }
+  &__info-text {
+    background-color: #ffffff;
+    padding-left: 68px;
+    box-shadow: 0px 0px 40.019999999999996px 5.98px rgba(77, 85, 105, 0.14);
+  }
+
+
+}
+.myths-tradeIn {
+  padding: 45px 75px 50px 68px;
+
+  @media screen and (max-width: 670px) {
+    padding: 20px 30px 35px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 127px;
+    padding-bottom: 35px;
+
+    @media screen and (max-width: 670px) {
+      padding: 70px 0 25px;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 89px;
+      height: 87px;
+
+      @media screen and (max-width: 670px) {
+        width: 65px;
+        height: 64px;
+      }
+    }
+
+    &--gos {
+      &:before {
+        background: url(../images/tradeIn-icon01.png);
+        background-size: contain;
+      }
+    }
+    &--factory {
+      &:before {
+        background: url(../images/tradeIn-icon02.png);
+        background-size: contain;
+      }
+    }
+    &--dealer {
+      &:before {
+        background: url(../images/tradeIn-icon03.png);
+        background-size: contain;
+      }
+    }
+  }
+  &__title {
+    font-size: 24px;
+    color: #de313b;
+    padding-bottom: 10px;
+  }
+  &__subtitle {
+    font-weight: 700;
+    padding-bottom: 12px;
+  }
+}
+.myths-credit {
+  padding: 35px 90px 20px 68px;
+
+  @media screen and (max-width: 670px) {
+    padding: 30px 30px 0px;
+  }
+
+  &__row {
+    align-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+
+    @media screen and (max-width: 960px) {
+      padding-bottom: 30px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    color: #de313b;
+    padding-bottom: 10px;
+  }
+  &__p {
+    font-weight: 700;
+    padding-bottom: 10px;
+
+    span {
+      color: #de313b;
+    }
+  }
+  &__second-item-img {
+    @media screen and (max-width: 960px) {
+      order: 1;
+    }
+  }
+  &__item-img {
+    @media screen and (max-width: 960px) {
+      text-align: center;
+    }
+  }
+}
+.myths-dealer {
+  padding: 57px 57px 47px 68px;
+
+  @media screen and (max-width: 670px) {
+    padding: 30px 30px 30px;
+  }
+
+  &__row {
+    align-content: center;
+    align-items: center;
+  }
+  &__p {
+    font-weight: 700;
+    font-size: 24px;
+    padding-right: 50px;
+
+    @media screen and (max-width: 960px) {
+      padding-right: 0;
+      font-size: 21px;
+    }
+    @media screen and (max-width: 670px) {
+      padding-bottom: 20px;
+    }
+  }
+}

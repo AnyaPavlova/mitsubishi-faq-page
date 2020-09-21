@@ -1,0 +1,183 @@
+.promo {
+  background: #ffffff;
+  padding: 45px 0 45px;
+
+  @media screen and (max-width: 960px) {
+    padding-bottom: 0;
+  }
+  @media screen and (max-width: 670px) {
+    padding-top: 25px;    
+  }
+
+  &__inner {
+    background: url(../images/promo-bg.jpg) no-repeat right bottom;
+
+    @media screen and (max-width: 1200px) {
+      background-size: contain;
+    }
+    @media screen and (max-width: 960px) {
+      background-size: 50%;
+    }
+    @media screen and (max-width: 670px) {
+      padding-bottom: 75px;
+    }
+
+  }
+  &__info {
+    max-width: 700px;
+    padding: 0 10px;
+  }
+  &__logo-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+
+    @media screen and (max-width: 670px) {
+      justify-content: center;
+      padding-bottom: 20px;
+    }
+  }
+  &__logo-plus {
+    font-size: 24px;
+    color: #a7a7a7;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  &__logo {
+    img {
+      display: block;
+    }
+    &--rolf {
+      margin-top: -5px;
+    }
+  }
+  &__questions {
+    font-size: 30px;
+    color: #de313b;
+    line-height: 1.6;
+    font-weight: 700;
+    padding-bottom: 35px;
+
+    @media screen and (max-width: 960px) {
+      padding-bottom: 15px;
+    }
+
+    @media screen and (max-width: 670px) {
+      font-size: 21px;
+      line-height: 1.4;
+      padding-bottom: 10px;
+
+      p {
+        padding-bottom: 15px;
+      }
+    }
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 700;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: 670px) {
+      line-height: 1.4;
+      padding-bottom: 20px;
+    }
+  }
+  &__main {
+    max-width: 580px;
+  }
+  &__interview {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    align-content: center;
+    align-items: center;
+  }
+  &__interview-photo {
+    width: 134px;
+
+    @media screen and (max-width: 670px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__interview-img {
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #b5b5b5;
+
+    @media screen and (max-width: 670px) {
+      margin: auto;
+    }
+  }
+  &__interview-text {
+    width: calc( 100% - 134px );
+    padding-left: 20px;
+
+    @media screen and (max-width: 960px) {
+      width: calc( 100% - 300px );
+    }
+    @media screen and (max-width: 670px) {
+      width: 100%;
+      padding-left: 0;
+      padding-top: 15px;
+    }
+  }
+  &__start {
+    padding: 55px 0 37px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #bb162b;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    @media screen and (max-width: 960px) {
+      padding-top: 25px;
+    }    
+  }
+  &__start-text {
+    padding-right: 40px;
+    display: inline-block;
+    position: relative;
+
+    @media screen and (max-width: 670px) {
+      font-size: 21px;
+      padding-right: 20px;
+    }
+  }
+  &__scroll-down {
+    display: block;
+    width: 20px;
+    height: 32px;
+    background: url(../images/scroll-down-btn.png) no-repeat center;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    animation: scrollDown 1.5s infinite;
+
+    @media screen and (max-width: 670px) {
+      width: 15px;
+      height: 24px;
+      background-size: contain;
+    } 
+  }
+}
+@keyframes scrollDown {
+  0% {
+    -webkit-transform:translate3d(0,-10px,0);
+    transform:translate3d(0,-10px,0);
+    opacity:0;
+  }
+  100% {
+    -webkit-transform:translate3d(0,10px,0);
+    transform:translate3d(0,10px,0);
+    opacity:1;
+  }
+}
