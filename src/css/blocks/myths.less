@@ -1,9 +1,9 @@
 .myths {
 
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 
   @media screen and (max-width: 960px) {
-    padding-bottom: 65px;
+    padding-bottom: 55px;
   }
 
   @media screen and (max-width: 670px) {
@@ -11,7 +11,7 @@
   }
 
   &__title-block {
-    max-width: 780px;
+    max-width: 750px;
     margin: auto;
     padding: 55px 0 25px;
 
@@ -65,6 +65,7 @@
     padding: 30px 35px 30px 60px;
     position: relative;
     line-height: 1.6;
+    font-weight: 500;
 
     @media screen and (max-width: 960px) {
       margin-left: 21px;
@@ -90,7 +91,7 @@
       width: 42px;
       height: 33px;
       display: block;
-      background: url(../images/left-quote.png) no-repeat center;
+      background: url(../images/left-quote-2.png) no-repeat center;
       background-size: contain;
       position: absolute;
       left: 0;
@@ -107,7 +108,7 @@
       width: 42px;
       height: 33px;
       display: block;
-      background: url(../images/right-quote.png) no-repeat center;
+      background: url(../images/right-quote-2.png) no-repeat center;
       background-size: contain;
       position: absolute;
       right: 0;
@@ -168,19 +169,19 @@
 
     &--gos {
       &:before {
-        background: url(../images/tradeIn-icon01.png);
+        background: url(../images/tradeIn-icon01-2.png);
         background-size: contain;
       }
     }
     &--factory {
       &:before {
-        background: url(../images/tradeIn-icon02.png);
+        background: url(../images/tradeIn-icon02-2.png);
         background-size: contain;
       }
     }
     &--dealer {
       &:before {
-        background: url(../images/tradeIn-icon03.png);
+        background: url(../images/tradeIn-icon03-2.png);
         background-size: contain;
       }
     }
@@ -189,6 +190,7 @@
     font-size: 24px;
     color: #de313b;
     padding-bottom: 10px;
+    font-weight: 700;
   }
   &__subtitle {
     font-weight: 700;
@@ -213,15 +215,20 @@
   }
   &__title {
     font-size: 24px;
-    color: #de313b;
+    color: #ed0000;
     padding-bottom: 10px;
+    font-weight: 700;
   }
   &__p {
-    font-weight: 700;
+    font-weight: 400;
     padding-bottom: 10px;
 
     span {
-      color: #de313b;
+      color: #ed0000;
+      font-weight: 500;
+    }
+    strong {
+      font-weight: 500;
     }
   }
   &__second-item-img {
@@ -246,10 +253,14 @@
     align-content: center;
     align-items: center;
   }
+  &__col-for-img {
+    text-align: right;
+  }
   &__p {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 24px;
     padding-right: 50px;
+    color: #000;
 
     @media screen and (max-width: 960px) {
       padding-right: 0;
@@ -258,5 +269,13 @@
     @media screen and (max-width: 670px) {
       padding-bottom: 20px;
     }
+  }
+  &__picture-caption {
+    max-width: 330px;
+    text-align: right;
+    padding-top: 6px;
+    margin-left: auto;
+    font-size: 16px;
+    color: #000000;
   }
 }
