@@ -34,14 +34,31 @@
     align-content: flex-start;
     align-items: flex-start;
   }
+  &__bq-photo-block {
+    width: 134px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 670px) {
+      flex-direction: row;
+      width: 100%;
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+  }
   &__bq-photo {
     width: 134px;
     padding-top: 5px;
+    padding-bottom: 10px;
 
     @media screen and (max-width: 670px) {
-      width: 100%;
+      // width: 100%;
       text-align: center;
-      padding-bottom: 20px;
+      padding-bottom: 30px;
+
+      width: 33.3333%;
+      padding-left: 5px;
+      padding-right: 5px;
     }
   }
   &__pic {
@@ -56,6 +73,7 @@
 
     @media screen and (max-width: 670px) {
       margin: auto;
+      max-width: 100%;
     }
   }
   &__bq-text {
