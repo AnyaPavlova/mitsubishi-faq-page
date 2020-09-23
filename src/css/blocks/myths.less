@@ -52,19 +52,32 @@
     padding-bottom: 10px;
 
     @media screen and (max-width: 670px) {
-      // width: 100%;
+      width: 100%;
       text-align: center;
       padding-bottom: 30px;
 
-      width: 33.3333%;
+      // width: 33.3333%;
       padding-left: 5px;
       padding-right: 5px;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      justify-content: flex-start;
     }
   }
   &__bq-label {
     padding-top: 5px;
     font-size: 12px;
     text-align: center;
+
+    @media screen and (max-width: 670px)  {
+      padding-top: 0;
+      width: 67%;
+      text-align: left;
+      padding-left: 20px;
+    }
   }
   &__pic {
     &--credit {
@@ -77,8 +90,9 @@
     border: 1px solid #b5b5b5;
 
     @media screen and (max-width: 670px) {
-      margin: auto;
-      max-width: 100%;
+      // margin: auto;
+      // max-width: 100%;
+      width: 33%;
     }
   }
   &__bq-text {
@@ -154,6 +168,11 @@
   }
 
 
+}
+.myths__bq-photo-block .myths__bq-img {
+  @media screen and (max-width: 670px) {
+    width: 100%;
+  }
 }
 .myths-tradeIn {
   padding: 45px 75px 50px 68px;
